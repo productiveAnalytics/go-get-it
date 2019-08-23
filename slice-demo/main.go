@@ -24,4 +24,12 @@ func main() {
 	my_slice_extensible = append(my_slice_extensible, 666)
 	fmt.Print("my slice extensible (updated) : ")
 	fmt.Println(my_slice_extensible)
+
+	// Slice of Slices
+	slice_first_2_elems := my_slice_extensible[:2]
+	slice_three_onward_elems := my_slice_extensible[2:]
+	fmt.Print("Slice of first 2 elems: ")
+	fmt.Println(slice_first_2_elems)
+	fmt.Print("Slice of third and onward elems: ")
+	fmt.Println(slice_three_onward_elems)
 }
