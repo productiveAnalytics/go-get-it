@@ -4,10 +4,11 @@ import "fmt"
 
 // constant block #1
 const (
-	first  = "1st"
+	first  = iota
 	second = iota
 	third  = iota
 	fourth = 4 << iota
+	PI     = 3.14
 )
 
 // constant block #2
@@ -19,7 +20,7 @@ const (
 
 func main() {
 	fmt.Println("From constant block #1")
-	fmt.Println(first, second, third, fourth)
+	fmt.Println(first, second, third, fourth, PI)
 
 	fmt.Println("From constant block #2")
 	fmt.Println(fifth, sixth, seventh)
