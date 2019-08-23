@@ -14,7 +14,7 @@ const (
 // constant block #2
 const (
 	fifth   = iota // iota will reset to zero
-	sixth   = iota
+	sixth          // No need to define, it will same as above i.e. iota
 	seventh = iota + 10
 )
 
